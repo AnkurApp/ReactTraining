@@ -17,8 +17,9 @@ function App() {
         >
           Learn React
         </a>
-      </header> */
-      <h1>First React App</h1>}
+  </header> */}
+      <h1>First React App</h1>
+      <h2>Changing the branch</h2>
     </div>
   );
 }
