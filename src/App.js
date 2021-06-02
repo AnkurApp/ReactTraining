@@ -26,13 +26,25 @@
 
 // export default App;
 
+// import Home from "./modules/home";
+// class App extends React.Component {
+//   render() {
+//     return (
+//       <div>
+//         <Home />
+//       </div>
+//     );
+//   }
+// }
+// export default App;
+
 import React from "react";
-import Home from "./modules/home";
+import PricingWebpage from "./Assignment1/pricingwebpage";
 class App extends React.Component {
   render() {
     return (
       <div>
-        <Home />
+        <PricingWebpage />
       </div>
     );
   }

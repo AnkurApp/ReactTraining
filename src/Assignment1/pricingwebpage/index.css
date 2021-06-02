@@ -1,0 +1,213 @@
+/* General Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+
+/* Utility Classes */
+
+.bold {
+  font-weight: bold;
+}
+
+.color-white {
+  color: #fff;
+}
+
+.planHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.planHeader .planName > div {
+  width: 20px;
+  height: 4px;
+  background-color: rgb(105, 0, 180);
+  margin-top: 1rem;
+  border-radius: 50px;
+}
+
+.planCost {
+  text-align: right;
+}
+.planCost h6 {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.planFeatures {
+  display: flex;
+  align-items: center;
+  color: grey;
+  margin: 1.5rem 0;
+  font-size: 15px;
+}
+
+.tick {
+  width: 12px;
+  height: 8px;
+  border: 2px solid;
+  border-color: transparent transparent grey grey;
+  transform: rotate(-45deg);
+  margin: 0px 20px 0px 5px;
+}
+
+.tick-white {
+  width: 12px;
+  height: 10px;
+  border: 2px solid;
+  border-color: transparent transparent #fff #fff;
+  transform: rotate(-45deg);
+  margin: 0px 20px 0px 5px;
+}
+
+.planButton {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.planButton p {
+  margin: 2rem 0;
+}
+
+.btn {
+  background-color: rgb(105, 0, 180);
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+}
+
+.main-container {
+  width: 1300px;
+  margin: 2rem auto;
+  height: 900px;
+  background-color: rgb(226, 221, 221);
+  border: none;
+  border-radius: 10px;
+  position: relative;
+}
+
+.container {
+  position: absolute;
+  width: 1150px;
+  height: 730px;
+  margin: 5.2rem 4.8rem;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 45px;
+}
+
+.flex-container {
+  width: 1050px;
+  margin: 2.22rem auto;
+  height: 656px;
+  display: flex;
+}
+.flex-container .section-A {
+  background-color: rgb(105, 0, 180);
+  width: 320px;
+  border: none;
+  border-radius: 20px;
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.flex-container .section-A .text-section {
+  margin: 2rem 2.5rem;
+}
+.flex-container .section-A .text-section p {
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 1.5;
+  word-spacing: 1.8;
+  margin-bottom: 1rem;
+}
+
+.flex-container .section-A .text-section .heading {
+  font-size: 40px;
+  line-height: normal;
+  margin-bottom: 1.2rem;
+}
+
+.flex-container .section-A .img-section {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.flex-container .section-B {
+  position: relative;
+  height: 100%;
+  width: 700px;
+  height: auto;
+}
+
+.section-B .B-freePlan {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.section-B .B-freePlan > p {
+  font-size: 40px;
+}
+
+.section-B .B-freePlan > p .line {
+  display: block;
+}
+
+.section-B .B-freePlan > div {
+  text-align: right;
+  line-height: 1.2;
+}
+
+.section-B .B-freePlan a {
+  font-weight: 500;
+}
+
+.section-B .plans-section {
+  display: grid;
+  grid-template-areas: "A B";
+  grid-gap: 1.5rem;
+  position: absolute;
+  width: 100%;
+  margin: 2rem auto 0;
+  overflow: hidden;
+  height: 500px;
+}
+
+.section-B .plans-section .LitePlan {
+  background-color: rgb(243, 240, 240);
+  border: none;
+  border-radius: 15px;
+  padding: 1.5rem;
+}
+.section-B .plans-section .LitePlan .planCost > p {
+  color: grey;
+}
+
+.section-B .plans-section .ProPlan {
+  background-color: rgb(105, 0, 180);
+  border: none;
+  border-radius: 15px;
+  padding: 1.5rem;
+}
+
+.section-B .plans-section .ProPlan .planHeader .planName > div {
+  background-color: #fff;
+}
+
+.ProPlan .planFeatures {
+  margin: 1rem 0;
+}
+
+.ProPlan .planButton .btn {
+  background-color: #fff;
+  color: #000;
+}
