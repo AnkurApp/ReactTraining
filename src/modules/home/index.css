@@ -1,8 +1,11 @@
 .homeContainer {
   width: 100vw;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #ccc;
-  margin-top: 0;
 }
 
 .homeContainer h3 {
@@ -16,4 +19,35 @@
 
 #h2tag {
   color: blue;
+}
+
+
+.itemContainer{
+  width: 200px;
+  height: 150px;
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid red;
+}
+
+.itemContainer h3{
+  color: #000;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.itemContainer button{
+  width: auto;
+  height: 30px;
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 15px;
+  background-color: lightgreen;
+}
+
+.colorRed{
+  color: red !important;
 }

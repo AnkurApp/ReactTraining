@@ -12,7 +12,7 @@
 //         <a
 //           className="App-link"
 //           href="https://reactjs.org"
-//           target="_blank"
+//          npm target="_blank"
 //           rel="noopener noreferrer"
 //         >
 //           Learn React
@@ -26,6 +26,7 @@
 
 // export default App;
 
+import React from "react";
 // import Home from "./modules/home";
 // class App extends React.Component {
 //   render() {
@@ -38,7 +39,6 @@
 // }
 // export default App;
 
-import React from "react";
 import PricingWebpage from "./Assignment1/pricingwebpage";
 class App extends React.Component {
   render() {
