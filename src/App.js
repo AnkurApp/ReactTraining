@@ -39,12 +39,23 @@ import React from "react";
 // }
 // export default App;
 
-import PricingWebpage from "./Assignment1/pricingwebpage";
+// import PricingWebpage from "./Assignment1/pricingwebpage";
+// class App extends React.Component {
+//   render() {
+//     return (
+//       <div>
+//         <PricingWebpage />
+//       </div>
+//     );
+//   }
+// }
+
+import PinInterest from "./Assignment2/PinInterest";
 class App extends React.Component {
   render() {
     return (
       <div>
-        <PricingWebpage />
+        <PinInterest />
       </div>
     );
   }
