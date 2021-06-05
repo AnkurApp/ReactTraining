@@ -1,0 +1,486 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=Rubik:wght@300;400&display=swap");
+
+@font-face {
+  font-family: AkkuratPro-Regular;
+  src: url(../../fonts/AkkuratPro/AkkuratPro-Regular.otf);
+}
+
+@font-face {
+  font-family: CircularStd;
+  src: url(../../fonts/Circular-Std-Font/Circular\ Std\ Medium.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark-grey-blue: #3a4e6f;
+  --cerulean: #009cde;
+  --cerulean-01: rgba(0, 156, 222, 0.1);
+  --blue-grey: #637696;
+  --dark-lime-green: #86c306;
+  --dark-forest-green: #000808;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.bitcoinBtn {
+  width: 384px;
+  height: 65px;
+  padding: 22px 77px 21px;
+  border: none;
+  border-radius: 50px;
+  background-color: var(--dark-lime-green);
+  cursor: pointer;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 0.06;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.signupCard{
+  width: 580px;
+  height: 120px;
+  margin: 17px 224px 127px 76px;
+  padding: 28px 35px 27px 36px;
+  border-radius: 30px;
+  box-shadow: 0 3px 26px 0 rgba(0, 0, 0, 0.08);
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.signupCard h3{
+  width: 306px;
+  height: 27px;
+  margin: 19px 3px 19px 0;
+  font-family: 'Rubik', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.8;
+  color: var(--dark-forest-green);
+}
+
+.signupCard button{
+  width: 200px;
+  height: 65px;
+  margin: 0 0 0 3px;
+  padding: 22px 50px 21px 64px;
+  border-radius: 50px;
+  background-color: var(--cerulean);
+  font-family: 'Rubik';
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 0.06;
+  color: #ffffff;
+}
+
+
+.mainContainer {
+  width: 100%;
+  margin: 0 auto;
+  height: 5175px;
+  background-color: #ffffff;
+  font-family: "Rubik", sans-serif;
+}
+
+.showcaseContainer {
+  width: 100%;
+  margin: 0 auto;
+  height: 650px;
+  padding-top: 1rem;
+  background-image: linear-gradient(to bottom, #f6fcff, #ffffff);
+}
+
+.headerContainer {
+  width: 1200px;
+  height: 60px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.verticalLine {
+  width: 1px;
+  height: 32px;
+  opacity: 0.15;
+  background-color: #abb5c7;
+}
+
+.navbarContainer {
+  display: flex;
+  align-items: center;
+  margin-right: 100px;
+}
+
+.navbarContainer a {
+  margin-left: 10px;
+  margin-right: 35px;
+  text-transform: uppercase;
+  font-family: AkkuratPro-Regular;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 1.67;
+  letter-spacing: 1px;
+  color: var(--dark-grey-blue);
+}
+
+.navbarContainer a:hover {
+  color: var(--cerulean);
+}
+
+.btn {
+  width: 110px;
+  height: 46px;
+  margin: 0 20px 0 0;
+  border-radius: 23px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: solid 2px var(--cerulean-01);
+  font-family: AkkuratPro-Regular;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.67;
+  letter-spacing: 1px;
+  color: var(--cerulean);
+}
+
+.signup {
+  background-color: var(--cerulean-01);
+  border: none;
+}
+
+select {
+  border: none;
+  background-color: transparent;
+  margin-right: 20px;
+}
+
+.banner {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.textSection h1 {
+  width: 596px;
+  height: 53px;
+  margin: 98px 76px 39px 0;
+  font-family: "Rubik", sans-serif;
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 1.49;
+  text-align: left;
+  color: #000808;
+}
+
+.textSection h3 {
+  width: 518px;
+  height: 42px;
+  margin: 39px 154px 39px 0;
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 1.43;
+  text-align: left;
+  color: #000808;
+}
+
+.textSection p {
+  width: 547px;
+  height: 107px;
+  margin: 39px 125px 39px 0;
+  font-family: "NunitoSans";
+  font-size: 20px;
+  line-height: 1.8;
+  text-align: left;
+  color: var(--blue-grey);
+}
+
+.cryptoCard {
+  width: 492px;
+  height: 417px;
+  margin-top: 3rem;
+  position: relative;
+  padding: 2rem 3rem;
+  border-radius: 15px;
+  background-color: #ffffff;
+  box-shadow: 0 3px 21px 0 rgba(0, 0, 0, 0.04);
+}
+
+.cryptoCard h3 {
+  width: 236px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  margin: 15px 69px 29px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.67;
+}
+
+.buy {
+  width: 190px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: solid 2px var(--cerulean-01);
+  border-radius: 10px 0 0 10px;
+  font-family: AkkuratPro-Regular;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.67;
+  letter-spacing: 1px;
+  color: var(--cerulean);
+  display: inline;
+  position: absolute;
+  top: 70px;
+  margin-left: 8px;
+}
+
+.sell {
+  width: 190px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: solid 1px rgba(0, 0, 0, 0.1);
+  border-radius: 0 10px 10px 0;
+  font-family: AkkuratPro-Regular;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.67;
+  letter-spacing: 1px;
+  color: #333;
+  display: inline;
+  position: absolute;
+  top: 70px;
+  right: 3rem;
+  margin-right: 8px;
+  border-left: none;
+}
+
+.cryptoFlex1 {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 150px;
+  width: 400px;
+  height: 50px;
+}
+
+.cryptoFlex1 img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  justify-self: flex-start;
+  margin-right: 20px;
+}
+
+.cryptoFlex1 p {
+  width: 87px;
+  height: 48px;
+  margin: 0 133px 0 15px;
+  font-size: 35px;
+  line-height: 1.33;
+}
+
+.cryptoCard .verticalLine {
+  height: 44px;
+}
+
+.cryptoCard select {
+  width: 120px;
+  height: 35px;
+  margin: 8px 10px 4px 20px;
+  font-size: 25px;
+  line-height: 1.38;
+  color: #000000;
+  border: none;
+}
+
+.horizontalLine {
+  width: 354px;
+  height: 1px;
+  margin: 10px 10px;
+  opacity: 0.25;
+  background-color: var(--dark-grey-blue);
+  position: absolute;
+  top: 220px;
+}
+
+.cryptoFlex2 {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 262px;
+  width: 400px;
+  height: 50px;
+}
+
+.cryptoFlex2 img{
+  width: 28px;
+  height: 28px;
+  margin-right: 20px;
+}
+
+.cryptoFlex2 p {
+  width: 200px;
+  height: 48px;
+  margin: 0 13px 0 8px;
+  font-size: 35px;
+  line-height: 1.3;
+  color: #000000;
+}
+
+.cryptoCard .bitcoinBtn {
+  position: absolute;
+  bottom: 20px;
+}
+
+.cardsContainer {
+  width: 1600px;
+  margin: 0 auto;
+  height: 500px;
+  background-color: #abb5c7;
+}
+
+.dogecoinContainer {
+  width: 1600px;
+  margin: 0 auto;
+  height: 1300px;
+  padding: 92px 230px 102px 0;
+  background-image: linear-gradient(181deg, #f6fcff 99%, #ffffff 10%);
+}
+
+.dogecoinBanner {
+  width: 1600px;
+  margin: auto;
+}
+
+.dogecoinBanner button {
+  width: 330px;
+  height: 65px;
+  margin-left: 630px;
+  padding: 22px 77px 21px;
+  border-radius: 50px;
+  background-color: var(--cerulean);
+}
+
+.coinBanner {
+  width: 1600px;
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+  color: var(--dark-forest-green);
+}
+
+.coinBanner h1 {
+  height: 47px;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1.25;
+}
+
+.coinBanner p {
+  height: 24px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 2.5;
+}
+
+.stepsFlex {
+  width: 1300px;
+  margin: 5rem auto 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.steps {
+  margin: 0 3rem;
+}
+
+.steps img {
+  margin-left: 100px;
+  margin-bottom: 1.5rem;
+}
+
+.stepName {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.stepName > div {
+  width: 55px;
+  height: 55px;
+  margin: 0 24px 0 0;
+  padding: 3px 10px 20px 22px;
+  background-color: var(--cerulean);
+  border-radius: 50%;
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 2.5;
+  color: #ffffff;
+}
+.steps p {
+  width: 310px;
+  margin-top: 1.5rem;
+  margin-right: 0;
+  margin-left: 0;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--blue-grey);
+}
+
+.buyDogecoin {
+  position: relative;
+}
+
+.buyDogecoin .downloadIcon {
+  position: absolute;
+  width: 22px;
+  height: 21px;
+  object-fit: contain;
+  top: 125px;
+  left: 48.3%;
+}
+
+.sellDogecoin {
+  margin-top: 8rem;
+  position: relative;
+}
+
+.sellDogecoin .stepName > div {
+  background-color: var(--dark-lime-green);
+}
+
+.sellDogecoin button {
+  background-color: var(--dark-lime-green);
+}
+
+.sellDogecoin .downloadIcon {
+  position: absolute;
+  width: 22px;
+  height: 21px;
+  object-fit: contain;
+  top: 125px;
+  left: 48.3%;
+}

@@ -1,3 +1,5 @@
+import React from "react";
+
 // // import logo from './logo.svg';
 // import './App.css';
 
@@ -26,7 +28,6 @@
 
 // export default App;
 
-import React from "react";
 // import Home from "./modules/home";
 // class App extends React.Component {
 //   render() {
@@ -50,12 +51,23 @@ import React from "react";
 //   }
 // }
 
-import PinInterest from "./Assignment2/PinInterest";
-class App extends React.Component {
-  render() {
-    return (
+// import PinInterest from "./Assignment2/PinInterest";
+// class App extends React.Component {
+//   render() {
+//     return (
+//       <div>
+//         <PinInterest />
+//       </div>
+//     );
+//   }
+// }
+
+import XcoinsPage from "./Assignment3/XcoinsPage";
+class App extends React.Component{
+  render(){
+    return(
       <div>
-        <PinInterest />
+        <XcoinsPage />
       </div>
     );
   }
