@@ -7,9 +7,16 @@ function DogecoinBanner() {
   return (
     <div className={"dogecoinBanner"}>
       <div className={"buyDogecoin"}>
-        <Dogecoin heading={"How to Buy Dogecoin"} />
+        <Dogecoin
+          heading={"How to Buy Dogecoin"}
+          para={"Only 3 simple steps"}
+        />
 
-        <img className={"downloadIcon"} src={"Assignment3Images/noun_Download_241367.png"} />
+        <img
+          className={"downloadIcon"}
+          src={"Assignment3Images/noun_Download_241367.png"}
+          alt=""
+        />
         <div className={"stepsFlex"}>
           <Step
             image={"Assignment3Images/noun_tick_453824.png"}
@@ -42,9 +49,16 @@ function DogecoinBanner() {
       </div>
 
       <div className={"sellDogecoin"}>
-        <Dogecoin heading={"How to Sell Dogecoin"} />
+        <Dogecoin
+          heading={"How to Sell Dogecoin"}
+          para={"Only 3 simple steps"}
+        />
 
-        <img className={"downloadIcon"} src={"Assignment3Images/noun_Download_2413679.png"} />
+        <img
+          className={"downloadIcon"}
+          src={"Assignment3Images/noun_Download_2413679.png"}
+          alt=""
+        />
         <div className={"stepsFlex"}>
           <Step
             image={"Assignment3Images/noun_tick_45382.png"}

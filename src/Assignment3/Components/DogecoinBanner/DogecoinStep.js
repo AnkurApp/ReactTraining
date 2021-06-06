@@ -3,7 +3,7 @@ import React from "react";
 function Step(props) {
   return (
     <div className={"steps"}>
-      <img src={props.image} />
+      <img src={props.image}  alt="" />
 
       <div className={"stepName"}>
           <div>{props.number}</div>

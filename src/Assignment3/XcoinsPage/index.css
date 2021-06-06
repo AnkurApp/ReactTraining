@@ -24,6 +24,7 @@
   --blue-grey: #637696;
   --dark-lime-green: #86c306;
   --dark-forest-green: #000808;
+  --black-5: rgba(0, 0, 0, 0.05);
 }
 
 a {
@@ -48,7 +49,7 @@ a {
   text-transform: uppercase;
 }
 
-.signupCard{
+.signupCard {
   width: 580px;
   height: 120px;
   margin: 17px 224px 127px 76px;
@@ -61,31 +62,30 @@ a {
   justify-content: space-evenly;
 }
 
-.signupCard h3{
+.signupCard h3 {
   width: 306px;
   height: 27px;
   margin: 19px 3px 19px 0;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 20px;
   font-weight: bold;
   line-height: 1.8;
   color: var(--dark-forest-green);
 }
 
-.signupCard button{
+.signupCard button {
   width: 200px;
   height: 65px;
   margin: 0 0 0 3px;
   padding: 22px 50px 21px 64px;
   border-radius: 50px;
   background-color: var(--cerulean);
-  font-family: 'Rubik';
+  font-family: "Rubik";
   font-size: 18px;
   font-weight: bold;
   line-height: 0.06;
   color: #ffffff;
 }
-
 
 .mainContainer {
   width: 100%;
@@ -98,7 +98,7 @@ a {
 .showcaseContainer {
   width: 100%;
   margin: 0 auto;
-  height: 650px;
+  height: 630px;
   padding-top: 1rem;
   background-image: linear-gradient(to bottom, #f6fcff, #ffffff);
 }
@@ -110,6 +110,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: #f6fcff;
 }
 
 .verticalLine {
@@ -204,7 +205,7 @@ select {
   width: 547px;
   height: 107px;
   margin: 39px 125px 39px 0;
-  font-family: "NunitoSans";
+  font-family: "Nunito Sans";
   font-size: 20px;
   line-height: 1.8;
   text-align: left;
@@ -333,7 +334,7 @@ select {
   height: 50px;
 }
 
-.cryptoFlex2 img{
+.cryptoFlex2 img {
   width: 28px;
   height: 28px;
   margin-right: 20px;
@@ -356,12 +357,129 @@ select {
 .cardsContainer {
   width: 1600px;
   margin: 0 auto;
-  height: 500px;
-  background-color: #abb5c7;
+  height: 550px;
+  /* background-color: ; */
+  position: relative;
+}
+
+.masterCard {
+  width: 331px;
+  height: 198px;
+  padding: 20px 31px 27px 29px;
+  border-radius: 32px;
+  box-shadow: 0 3px 16px 0 var(--black-5);
+  border: solid 1px rgba(99, 118, 150, 0.2);
+  background-color: #fff6f6;
+  position: absolute;
+  top: 70px;
+  left: 250px;
+  z-index: 1;
+}
+
+.visaCard {
+  width: 415px;
+  height: 248px;
+  padding: 25px 40px 34px 36px;
+  border-radius: 32px;
+  box-shadow: 0 3px 16px 0 var(--black-5);
+  border: solid 1px rgba(99, 118, 150, 0.2);
+  background-color: #f6fcff;
+  position: absolute;
+  top: 90px;
+  left: 534px;
+  z-index: 2;
+}
+
+.exchangeCard .coinBanner {
+  width: 500px;
+  height: 300px;
+  /* margin: 20px 236.4px 1357.6px 39.2px; */
+  padding: 60px 49px 59px 41px;
+  border-radius: 32px;
+  box-shadow: 0 3px 21px 0 var(--black-5);
+  border: solid 1px rgba(99, 118, 150, 0.2);
+  background-color: #ffffff;
+  position: absolute;
+  bottom: 85px;
+  right: 218px;
+  z-index: 3;
+}
+.exchangeCard .coinBanner h1 {
+  width: 393px;
+  height: 120px;
+  /* margin: 0 16px 32px 0; */
+  font-family: "Rubik", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1.25;
+  text-align: left;
+  color: var(--dark-forest-green);
+}
+.exchangeCard .coinBanner p {
+  width: 409px;
+  height: 63px;
+  font-family: "Nunito Sans";
+  font-size: 20px;
+  text-align: left;
+  line-height: 1.6;
+  color: var(--blue-grey);
+}
+
+.cardNumber {
+  display: flex;
+  margin: 20px 0;
+}
+
+.visaCard .cardNumber {
+  margin-top: 50px;
+}
+
+.cardNumber1 {
+  display: flex;
+  margin-right: 30px;
+}
+
+.visaCard .cardNumber1 {
+  margin-right: 50px;
+}
+
+.cardNumber1 p {
+  font-family: "Nunito Sans";
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--blue-grey);
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  margin: 7px 6px 0 0;
+  border-radius: 50%;
+  background-color: var(--blue-grey);
+}
+
+.cardDetails {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Nunito Sans";
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--blue-grey);
+}
+
+.visaCard .cardDetails {
+  margin-top: 35px;
+  font-size: 17px;
+}
+
+.holderName p:last-child,
+.expiryDate p:last-child {
+  font-weight: 600;
 }
 
 .dogecoinContainer {
-  width: 1600px;
+  width: 100%;
   margin: 0 auto;
   height: 1300px;
   padding: 92px 230px 102px 0;
@@ -369,21 +487,21 @@ select {
 }
 
 .dogecoinBanner {
-  width: 1600px;
+  width: 1200px;
   margin: auto;
 }
 
 .dogecoinBanner button {
   width: 330px;
   height: 65px;
-  margin-left: 630px;
+  margin-left: 535px;
   padding: 22px 77px 21px;
   border-radius: 50px;
   background-color: var(--cerulean);
 }
 
 .coinBanner {
-  width: 1600px;
+  width: 1400px;
   text-align: center;
   font-family: "Rubik", sans-serif;
   color: var(--dark-forest-green);
@@ -404,7 +522,7 @@ select {
 }
 
 .stepsFlex {
-  width: 1300px;
+  width: 1400px;
   margin: 5rem auto 2rem;
   display: flex;
   justify-content: space-between;
@@ -460,7 +578,7 @@ select {
   height: 21px;
   object-fit: contain;
   top: 125px;
-  left: 48.3%;
+  left: 56%;
 }
 
 .sellDogecoin {
@@ -482,5 +600,283 @@ select {
   height: 21px;
   object-fit: contain;
   top: 125px;
-  left: 48.3%;
+  left: 56%;
+}
+
+.why {
+  width: 100%;
+  margin: 3rem auto;
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+}
+
+.why > img {
+  display: block;
+  width: 40%;
+  height: 600px;
+  margin-left: -10px;
+}
+
+.why .textSection {
+  height: 600px;
+  margin-left: 150px;
+  margin-top: 0;
+}
+
+.why .textSection h1 {
+  margin-top: 0;
+  width: 493px;
+  /* height: 50px; */
+  margin-bottom: 80px;
+  font-family: "Rubik";
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1.25;
+  color: var(--dark-forest-green);
+}
+.why .whyFlex {
+  display: flex;
+  align-items: center;
+  height: 30px;
+}
+
+.why .whyFlex img {
+  width: 20px;
+  height: 28px;
+  margin-right: 10px;
+  object-fit: contain;
+}
+.why .textSection h3 {
+  width: 221px;
+  height: 24px;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--dark-forest-green);
+}
+
+.why .textSection p {
+  width: 576px;
+  height: 90px;
+  font-family: Nunito Sans, sans-serif;
+  font-size: 20px;
+  line-height: 1.7;
+  color: var(--blue-grey);
+  margin-top: 10px;
+}
+
+.whatDoge {
+  width: 1400px;
+  margin: auto;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whatCard {
+  width: 281px;
+  height: 315px;
+  /* margin: 127px 31px 735px 189px; */
+  padding: 79px 65px 73px 51px;
+  box-shadow: 0 3px 21px 0 rgba(0, 0, 0, 0.04);
+  border: solid 1px rgba(99, 118, 150, 0.2);
+  border-radius: 10px;
+  margin-right: 31px;
+  margin-left: 31px;
+  background-color: #ffffff;
+}
+
+/* .whatCard > img{
+
+} */
+
+.whatFlex {
+  width: 200px;
+  display: flex;
+  height: 35px;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.whatFlex img {
+  margin-right: 15px;
+}
+
+.whatContainer {
+  width: 600px;
+  height: 315px;
+  /* margin: 127px 30px 735px 31px; */
+  padding: 32px 17px 27px 18px;
+  box-shadow: 0 3px 21px 0 rgba(0, 0, 0, 0.04);
+  border: solid 1px rgba(99, 118, 150, 0.2);
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.whatContainer h2 {
+  width: 364px;
+  height: 47px;
+  /* margin: 0 102px 24px 99px; */
+  margin-left: 110px;
+  font-family: "Rubik", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1.25;
+  color: var(--dark-forest-green);
+}
+
+.whatContainer p {
+  width: 550px;
+  margin: auto;
+  height: 150px;
+  margin-top: 24px;
+  padding: 0 1rem;
+  font-family: "Nunito Sans";
+  font-size: 20px;
+  line-height: 1.6;
+  text-align: center;
+  color: var(--blue-grey);
+}
+
+.whatCard1 .whatCard > img {
+  width: 94.6px;
+  height: 100.1px;
+  margin: 0 28.6px 10px 41.8px;
+  object-fit: contain;
+}
+
+.whatCard2 .whatCard > img {
+  width: 139.5px;
+  height: 52.6px;
+  margin: 30px 15.6px 10px 14.9px;
+  object-fit: contain;
+}
+
+.whatCard1 .whatCard .whatFlex {
+  margin-bottom: 15px;
+}
+
+.whatCard2 .whatCard .whatFlex {
+  margin-top: 45px;
+}
+
+.gradientContainer {
+  width: 100%;
+  height: 800px;
+  margin-top: -200px;
+  background-image: linear-gradient(182deg, #f6fcff 98%, #ffffff 11%);
+}
+.whereContainer {
+  width: 100%;
+  margin: auto;
+  padding: 2rem 6rem;
+}
+
+.whereContainer .coinBanner {
+  margin-top: 200px;
+}
+
+.whereContainer .coinBanner h1 {
+  width: 1600px;
+  height: 47px;
+  font-family: "Rubik";
+  margin-right: 20px;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1.25;
+  text-align: center;
+  color: var(--dark-forest-green);
+}
+
+.whereContainer .coinBanner p {
+  width: 800px;
+  height: 63px;
+  margin: 1rem 25rem;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 20px;
+  line-height: 1.8;
+  text-align: center;
+  color: var(--blue-grey);
+}
+
+.whereContainer .whereFlex {
+  display: flex;
+  justify-content: center;
+}
+
+.whereFlex > img {
+  width: 260px;
+  height: 290px;
+  margin: 50px 70px 0px 70px;
+  object-fit: contain;
+}
+
+.whereFlex .whereFlexchild img {
+  width: 220px;
+  height: 220px;
+  /* margin: 1px 0 0; */
+  margin-top: 70px;
+  object-fit: contain;
+  border-radius: 50%;
+  box-shadow: 0 3px 21px 0 rgba(0, 0, 0, 0.04);
+  border: solid 1px rgba(99, 118, 150, 0.2);
+}
+.whereFlex .whereFlexchild p {
+  width: 201px;
+  height: 19px;
+  margin: 18px 24px 0 25px;
+  font-family: "Rubik", sans-serif;
+  font-size: 15px;
+  font-weight: Bold;
+  /* line-height: 3.13; */
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-align: left;
+  color: var(--dark-forest-green);
+}
+
+.isDogecoinContainer {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: flex-start;
+  margin: 5rem auto;
+}
+
+.isDogecoinContainer img {
+  width: 720px;
+  height: 550px;
+  display: block;
+  margin-left: -10px;
+}
+
+.isDogecoinContainer .textSection {
+  margin-left: 130px;
+  margin-top: 100px;
+}
+
+.isDogecoinContainer .textSection h1 {
+  width: 396px;
+  height: 47px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-family: "Rubik", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1.25;
+  text-align: center;
+  color: var(--dark-forest-green);
+}
+
+.isDogecoinContainer .textSection p {
+  width: 563px;
+  height: 99px;
+  font-family: "Nunito Sans";
+  font-size: 20px;
+  line-height: 1.8;
+  text-align: left;
+  color: var(--blue-grey);
+  margin-top: 0;
+  margin-left: 10px;
 }

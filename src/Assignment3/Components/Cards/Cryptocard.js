@@ -24,7 +24,7 @@ function Cryptocard() {
       <div className={"horizontalLine"}></div>
 
       <div className={"cryptoFlex2"}>
-        <img src={"Assignment3Images/bitcoinIcon.jpeg"}  />
+        <img src={"Assignment3Images/bitcoinIcon.jpeg"} alt="" />
         <div>
           <p>{"0.00174681"}</p>
         </div>
