@@ -9,6 +9,7 @@ import Whatdogecoin from "../Components/WhatDogecoin/whatDogecoin";
 import WhereDogecoin from "../Components/WhereDogecoin/whereDogecoin";
 import Isdogecoin from "../Components/IsDogecoin/Isdogecoin";
 import Dogecoin from "../Components/DogecoinBanner/Dogecoin";
+import Footer from "../Components/Footer/footer";
 
 class XcoinsPage extends Component {
   render() {
@@ -53,6 +54,8 @@ class XcoinsPage extends Component {
           <WhereDogecoin />
           <Isdogecoin />
         </div>
+
+        <Footer />
       </div>
     );
   }

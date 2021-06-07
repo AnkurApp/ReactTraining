@@ -9,4 +9,4 @@ function Signupcard(){
     );
 }
 
-export default Signupcard();
+export default Signupcard;

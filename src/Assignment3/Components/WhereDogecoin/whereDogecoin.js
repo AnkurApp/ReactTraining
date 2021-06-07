@@ -12,16 +12,7 @@ function WhereDogecoin() {
       />
 
       <div className={"whereFlex"}>
-        <div className={"whereFlexchild"}>
-          <div>
-            <img
-              src={"Assignment3Images/junko-nakase-Q-72wa9-7Dg-unsplash.png"}
-              alt=""
-            />
-          </div>
-          <p>{"Clothing Stores"}</p>
-        </div>
-
+        <img src={"Assignment3Images/group1.png"} alt="" />
         <img src={"Assignment3Images/Group 3346.png"} alt="" />
         <img src={"Assignment3Images/Group 3345.png"} alt="" />
       </div>

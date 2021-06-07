@@ -1,5 +1,5 @@
 import React from "react";
-// import Signupcard from "../Cards/Signup";
+import Signupcard from "../Cards/Signup";
 
 function Whydogecoin() {
   return (
@@ -28,7 +28,7 @@ function Whydogecoin() {
             "If you have any questions about Dogecoin or how to buy & sell it, you can contact our 24/7 customer support team."
           }
         </p>
-        {/* <Signupcard /> */}
+        <Signupcard />
       </div>
     </div>
   );

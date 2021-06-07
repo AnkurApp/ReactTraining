@@ -32,6 +32,10 @@ a {
   color: #000;
 }
 
+ul {
+  list-style: none;
+}
+
 .bitcoinBtn {
   width: 384px;
   height: 65px;
@@ -49,48 +53,10 @@ a {
   text-transform: uppercase;
 }
 
-.signupCard {
-  width: 580px;
-  height: 120px;
-  margin: 17px 224px 127px 76px;
-  padding: 28px 35px 27px 36px;
-  border-radius: 30px;
-  box-shadow: 0 3px 26px 0 rgba(0, 0, 0, 0.08);
-  background-color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.signupCard h3 {
-  width: 306px;
-  height: 27px;
-  margin: 19px 3px 19px 0;
-  font-family: "Rubik", sans-serif;
-  font-size: 20px;
-  font-weight: bold;
-  line-height: 1.8;
-  color: var(--dark-forest-green);
-}
-
-.signupCard button {
-  width: 200px;
-  height: 65px;
-  margin: 0 0 0 3px;
-  padding: 22px 50px 21px 64px;
-  border-radius: 50px;
-  background-color: var(--cerulean);
-  font-family: "Rubik";
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 0.06;
-  color: #ffffff;
-}
-
 .mainContainer {
   width: 100%;
   margin: 0 auto;
-  height: 5175px;
+  height: 5400px;
   background-color: #ffffff;
   font-family: "Rubik", sans-serif;
 }
@@ -168,6 +134,12 @@ select {
   border: none;
   background-color: transparent;
   margin-right: 20px;
+  font-family: AkkuratPro-Regular;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.67;
+  letter-spacing: 1px;
+  color: var(--dark-grey-blue);
 }
 
 .banner {
@@ -315,7 +287,7 @@ select {
   border: none;
 }
 
-.horizontalLine {
+.cryptoCard .horizontalLine {
   width: 354px;
   height: 1px;
   margin: 10px 10px;
@@ -358,7 +330,6 @@ select {
   width: 1600px;
   margin: 0 auto;
   height: 550px;
-  /* background-color: ; */
   position: relative;
 }
 
@@ -393,7 +364,6 @@ select {
 .exchangeCard .coinBanner {
   width: 500px;
   height: 300px;
-  /* margin: 20px 236.4px 1357.6px 39.2px; */
   padding: 60px 49px 59px 41px;
   border-radius: 32px;
   box-shadow: 0 3px 21px 0 var(--black-5);
@@ -407,7 +377,6 @@ select {
 .exchangeCard .coinBanner h1 {
   width: 393px;
   height: 120px;
-  /* margin: 0 16px 32px 0; */
   font-family: "Rubik", sans-serif;
   font-size: 40px;
   font-weight: bold;
@@ -627,7 +596,6 @@ select {
 .why .textSection h1 {
   margin-top: 0;
   width: 493px;
-  /* height: 50px; */
   margin-bottom: 80px;
   font-family: "Rubik";
   font-size: 40px;
@@ -647,7 +615,7 @@ select {
   margin-right: 10px;
   object-fit: contain;
 }
-.why .textSection h3 {
+.why .textSection .whyFlex h3 {
   width: 221px;
   height: 24px;
   font-size: 20px;
@@ -677,7 +645,6 @@ select {
 .whatCard {
   width: 281px;
   height: 315px;
-  /* margin: 127px 31px 735px 189px; */
   padding: 79px 65px 73px 51px;
   box-shadow: 0 3px 21px 0 rgba(0, 0, 0, 0.04);
   border: solid 1px rgba(99, 118, 150, 0.2);
@@ -687,9 +654,42 @@ select {
   background-color: #ffffff;
 }
 
-/* .whatCard > img{
+.signupCard {
+  width: 580px;
+  height: 120px;
+  padding: 0 30px;
+  border-radius: 30px;
+  box-shadow: 0 3px 26px 0 rgba(0, 0, 0, 0.08);
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+}
 
-} */
+.signupCard h3 {
+  width: 600px;
+  height: 27px;
+  margin-right: 0;
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--dark-forest-green);
+}
+
+.signupCard button {
+  width: 250px;
+  height: 65px;
+  margin: 0 0 0 3px;
+  padding: 21px 55px;
+  border-radius: 50px;
+  background-color: var(--cerulean);
+  font-family: "Rubik";
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 0.06;
+  color: #ffffff;
+  text-transform: uppercase;
+}
 
 .whatFlex {
   width: 200px;
@@ -706,7 +706,6 @@ select {
 .whatContainer {
   width: 600px;
   height: 315px;
-  /* margin: 127px 30px 735px 31px; */
   padding: 32px 17px 27px 18px;
   box-shadow: 0 3px 21px 0 rgba(0, 0, 0, 0.04);
   border: solid 1px rgba(99, 118, 150, 0.2);
@@ -811,31 +810,9 @@ select {
   margin: 50px 70px 0px 70px;
   object-fit: contain;
 }
-
-.whereFlex .whereFlexchild img {
-  width: 220px;
-  height: 220px;
-  /* margin: 1px 0 0; */
-  margin-top: 70px;
-  object-fit: contain;
-  border-radius: 50%;
-  box-shadow: 0 3px 21px 0 rgba(0, 0, 0, 0.04);
-  border: solid 1px rgba(99, 118, 150, 0.2);
+.whereFlex img:first-child {
+  height: 285px;
 }
-.whereFlex .whereFlexchild p {
-  width: 201px;
-  height: 19px;
-  margin: 18px 24px 0 25px;
-  font-family: "Rubik", sans-serif;
-  font-size: 15px;
-  font-weight: Bold;
-  /* line-height: 3.13; */
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  text-align: left;
-  color: var(--dark-forest-green);
-}
-
 .isDogecoinContainer {
   width: 100%;
   height: 600px;
@@ -870,7 +847,7 @@ select {
 }
 
 .isDogecoinContainer .textSection p {
-  width: 563px;
+  width: 530px;
   height: 99px;
   font-family: "Nunito Sans";
   font-size: 20px;
@@ -879,4 +856,154 @@ select {
   color: var(--blue-grey);
   margin-top: 0;
   margin-left: 10px;
+}
+
+.isDogecoinContainer .signupCard {
+  margin-top: 50px;
+}
+
+.footerContainer {
+  width: 1400px;
+  margin: auto;
+  height: 450px;
+  margin-top: 650px;
+}
+
+.footerContainer .horizontalLine {
+  width: 1350px;
+  height: 0px;
+  margin: auto;
+  margin-bottom: 10px;
+  margin-right: 100px;
+  border: solid 1px rgba(99, 118, 150, 0.2);
+}
+
+footer {
+  padding: 2rem 1.5rem;
+}
+
+.footerContainer .sectionA {
+  display: flex;
+  padding-bottom: 5rem;
+}
+
+.footerContainer .sectionA .sectionALeft img {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.footerContainer .sectionA .sectionALeft p {
+  width: 300px;
+  height: 22px;
+  font-size: 14px;
+  font-family: AkkuratPro-Regular;
+  opacity: 0.5;
+  line-height: 1.57;
+  color: var(--blue-grey);
+}
+
+.footerContainer .sectionARight {
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 300px;
+}
+
+.socialFlex {
+  display: flex;
+  align-items: center;
+}
+
+.socialFlex img {
+  margin-right: 15px;
+  width: 18px;
+  height: 18px;
+}
+
+.socialFlex img:first-child {
+  width: 20px;
+  height: 20px;
+}
+
+.footerContainer .sectionA ul li {
+  width: 100px;
+  height: 24px;
+  margin: 0 122px 16px 0;
+  font-family: AkkuratPro-Regular;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.71;
+  letter-spacing: 1px;
+}
+
+.footerContainer .sectionA ul li:first-child {
+  text-transform: uppercase;
+}
+
+.footerContainer .sectionA ul li a {
+  width: 100px;
+  height: 102px;
+  /* margin: 16px 130px 0 0; */
+  font-family: AkkuratPro-Regular;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 2.13;
+  letter-spacing: normal;
+  color: var(--blue-grey);
+}
+
+.footerContainer .sectionB .sectionBLink {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sectionB .sectionBLink ul {
+  display: flex;
+}
+
+.footerContainer .sectionB .sectionBLink ul li a {
+  width: 200px;
+  height: 22px;
+  margin-right: 35px;
+  font-family: AkkuratPro-Regular;
+  font-size: 14px;
+  /* line-height: 1.57; */
+  letter-spacing: normal;
+  color: var(--blue-grey);
+}
+
+.footerContainer .sectionB .sectionBLink .select {
+  display: flex;
+  margin-right: 90px;
+}
+
+.footerContainer .sectionB .sectionBLink .select p {
+  width: 67px;
+  height: 22px;
+  /* margin: 122px 10px 58px 436px; */
+  font-family: AkkuratPro-Regular;
+  font-size: 14px;
+  line-height: 1.57;
+  color: var(--blue-grey);
+}
+
+.footerContainer .sectionB .sectionBLink .select select {
+  width: 75px;
+  height: 22px;
+  margin-top: -1px;
+  /* margin: 122px 5px 58px 10px; */
+  font-family: AkkuratPro-Regular;
+  font-size: 14px;
+  line-height: 1.57;
+}
+
+.footerContainer .sectionB > p {
+  width: 1200px;
+  height: 44px;
+  margin: 58px 18px 0 0;
+  opacity: 0.5;
+  font-family: AkkuratPro-Regular;
+  font-size: 14px;
+  line-height: 1.57;
+  color: var(--blue-grey);
 }
