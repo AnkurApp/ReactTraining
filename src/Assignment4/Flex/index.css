@@ -1,0 +1,380 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=Rubik:wght@300;400&display=swap");
+
+@font-face {
+  font-family: AkkuratPro-Regular;
+  src: url(../../fonts/AkkuratPro/AkkuratPro-Regular.otf);
+}
+
+@font-face {
+  font-family: CircularStd;
+  src: url(../../fonts/Circular-Std-Font/Circular\ Std\ Medium.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark-grey-blue: #3a4e6f;
+  --cerulean: #009cde;
+  --cerulean-01: rgba(0, 156, 222, 0.1);
+  --blue-grey: #637696;
+  --dark-lime-green: #86c306;
+  --dark-forest-green: #000808;
+  --black-5: rgba(0, 0, 0, 0.05);
+  --ice-blue-two: #f9fdff;
+  --black: #000000;
+  --nice-blue-7: rgba(23, 115, 166, 0.07);
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul {
+  list-style: none;
+}
+
+.mainContainer {
+  width: 100%;
+  margin: auto;
+  padding: 18px 25px 40px;
+  background-color: var(--ice-blue-two);
+  display: flex;
+}
+
+.headerContainer {
+  display: none;
+}
+
+.toggle {
+  width: 34px;
+  height: 35px;
+  /* margin: 0 25px 0 0; */
+  padding: 11px 10px;
+  box-shadow: 0 10px 20px 0 rgba(37, 119, 167, 0.07);
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.toggleLine {
+  width: 14px;
+  height: 2px;
+  margin-top: 2px;
+  border-radius: 1px;
+  background-color: var(--cerulean);
+}
+
+.headerContainer img {
+  width: 30px;
+  height: 30px;
+  padding: 6px;
+  margin: 0 0.3rem;
+  margin-top: 3px;
+}
+
+.headerContainer .logo {
+  width: 90px;
+  height: 35px;
+  margin: 0 1.7rem;
+}
+
+.headerContainer .headerRight {
+  display: flex;
+}
+
+.headerContainer .profile {
+  width: 34px;
+  height: 33px;
+  border-radius: 50%;
+}
+
+.contentContainer {
+  width: 100%;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.contentContainer h3 {
+  width: 100px;
+  height: 30px;
+  font-family: CircularStd;
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 1.25;
+  color: var(--black);
+}
+
+.contentContainer input {
+  width: 95%;
+  height: 50px;
+  margin-top: 1rem;
+  margin-right: 0.5rem;
+  /* padding: 6px 68px 10px 30px; */
+  border-radius: 40px;
+  border: none;
+  box-shadow: 0 7px 15px 0 var(--nice-blue-7);
+  background-color: #ffffff;
+  position: relative;
+}
+
+.contentContainer input::placeholder {
+  position: absolute;
+  width: 100%;
+  margin: 0.6rem auto;
+  height: 32px;
+  text-align: center;
+  opacity: 0.3;
+  font-family: AkkuratPro-Regular;
+  font-size: 16px;
+  line-height: 1.78;
+  color: var(--blue-grey);
+}
+
+.cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+.cardsContainer .card {
+  width: 400px;
+  height: 353px;
+  margin: 1rem;
+  padding: 28px 41px 36px 40px;
+  border-radius: 20px;
+  box-shadow: 0 7px 15px 0 var(--nice-blue-7);
+  background-color: #ffffff;
+}
+
+.cardsContainer .card h3 {
+  width: 70%;
+  height: 36px;
+  margin-bottom: 20px;
+  font-family: CircularStd;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 2;
+  color: var(--black);
+}
+
+.cardsContainer .card ul {
+  margin-bottom: 120px;
+}
+
+.cardsContainer .card ul li {
+  margin-bottom: 15px;
+}
+
+.cardsContainer .card ul li a {
+  height: 22px;
+  /* margin: 21px 43px 18px 0; */
+  font-family: AkkuratPro-Regular;
+  font-size: 14px;
+  line-height: 1.57;
+  color: var(--cerulean);
+}
+
+.cardsContainer .card > a {
+  width: 120px;
+  height: 22px;
+  margin-top: 500px;
+  font-family: AkkuratPro-Regular;
+  font-size: 14px;
+  line-height: 1.57;
+  color: var(--dark-lime-green);
+}
+
+.sideBar {
+  width: 600px;
+  margin-top: 0.8rem;
+}
+
+.sideBar p {
+  margin-top: 2.5rem;
+  color: var(--blue-grey);
+  font-size: 15px;
+  opacity: 0.5;
+  text-transform: uppercase;
+}
+
+.sideBar a {
+  display: block;
+  color: #3a4e6f;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 2rem 0;
+}
+
+.contentContainer .sectionA {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  margin-bottom: 1rem;
+}
+
+.contentContainer .toggle {
+  display: none;
+}
+
+.contentContainer .sectionA select {
+  width: 40px;
+  height: 20px;
+  margin-right: 100px;
+  font-family: AkkuratPro-Regular;
+  border: none;
+  background: transparent;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.67;
+  letter-spacing: 1px;
+  color: var(--dark-grey-blue);
+}
+
+.contentContainer .sectionA button {
+  width: 160px;
+  height: 45px;
+  border: none;
+  border-radius: 5px;
+  padding: 0.3rem 0.5rem;
+  background-color: var(--dark-lime-green);
+  font-size: 15px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 361px) {
+  .mainContainer {
+    flex-direction: column;
+  }
+  .sideBar {
+    display: none;
+  }
+
+  .sectionARight {
+    display: none;
+  }
+
+  .cardsContainer {
+    width: 100%;
+  }
+  .cardsContainer .card {
+    padding-left: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .mainContainer {
+    flex-direction: column;
+  }
+  .sideBar {
+    display: none;
+  }
+  .sectionARight {
+    display: none;
+  }
+  .headerContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+  }
+
+  .contentContainer {
+    margin-top: 0.3rem;
+  }
+
+  .cardsContainer {
+    margin-top: 0.5rem;
+  }
+
+  .cardsContainer h3 {
+    width: 200px;
+  }
+
+  .contentContainer .card h3 {
+    width: 167px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
+
+
+@media screen and (min-width: 601px) and (max-width: 1000px) {
+  .mainContainer {
+    flex-direction: column;
+  }
+  .sideBar {
+    display: none;
+  }
+
+  .sectionARight {
+    display: none;
+  }
+
+  .cardsContainer {
+    width: 100%;
+  }
+
+  .cardsContainer .card {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 1.5rem;
+  }
+
+  .contentContainer .toggle {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin-right: 50px;
+    padding: 17px 14px;
+  }
+  .contentContainer .toggle .toggleLine {
+    width: 20px;
+    margin-top: 3px;
+  }
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1321px) {
+  .mainContainer {
+    flex-direction: column;
+  }
+  .sideBar {
+    display: none;
+  }
+
+  .sectionARight {
+    display: none;
+  }
+  .contentContainer .toggle {
+    display: block;
+    width: 65px;
+    height: 65px;
+    margin-right: 50px;
+    padding: 19px 16px;
+  }
+  .contentContainer .toggle .toggleLine {
+    width: 30px;
+    height: 3px;
+    margin-top: 5px;
+  }
+
+  .cardsContainer {
+    width: 100%;
+  }
+
+  .cardsContainer .card {
+    width: 45%;
+  }
+
+  .contentContainer .sectionA h3 {
+    font-size: 40px;
+    margin-left: 20px;
+  }
+}

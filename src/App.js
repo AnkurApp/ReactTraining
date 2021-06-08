@@ -62,15 +62,28 @@ import React from "react";
 //   }
 // }
 
-import XcoinsPage from "./Assignment3/XcoinsPage";
-class App extends React.Component{
-  render(){
-    return(
-      <div>
-        <XcoinsPage />
-      </div>
-    );
-  }
+// import XcoinsPage from "./Assignment3/XcoinsPage";
+// class App extends React.Component{
+//   render(){
+//     return(
+//       <div>
+//         <XcoinsPage />
+//       </div>
+//     );
+//   }
+// }
+
+
+// import GridMobile from "./Assignment4/Grid/index";
+import FlexResponsive from "./Assignment4/Flex/index";
+
+function App(){
+  return(
+    <div>
+      {/* <GridMobile /> */}
+      <FlexResponsive />
+    </div>
+  );
 }
 
 export default App;
