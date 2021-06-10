@@ -19,7 +19,12 @@ const usestyles = makeStyles({
 
   switch: {
     marginTop: "10px",
+
+    "& .MuiAppBar-colorPrimary":{
+      color: '#000 !important',
+    }
   },
+
   signUp: {
     backgroundColor: "#388538",
     color: "#ffffff",
@@ -28,6 +33,7 @@ const usestyles = makeStyles({
     padding: "8px 25px",
     fontWeight: "600",
   },
+  
   logIn: {
     backgroundColor: "#1564c0",
     color: "#ffffff",

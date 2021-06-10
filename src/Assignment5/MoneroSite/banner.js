@@ -1,5 +1,11 @@
 import React from "react";
-import { Button, makeStyles, TextField, Typography } from "@material-ui/core";
+import {
+  Button,
+  makeStyles,
+  TableContainer,
+  TextField,
+  Typography,
+} from "@material-ui/core";
 import ShoppingCartOutlinedIcon from "@material-ui/icons/ShoppingCartOutlined";
 import SearchOutlinedIcon from "@material-ui/icons/SearchOutlined";
 import CountrySelect from "./selectcountry";
@@ -23,7 +29,7 @@ const useStyles = makeStyles({
     justifyContent: "center",
     width: "95%",
     margin: "auto",
-    marginTop: "2rem",
+    marginTop: "1rem",
     padding: " 1rem 3rem",
   },
 
@@ -48,6 +54,14 @@ const useStyles = makeStyles({
     fontWeight: "bold",
     marginBottom: "20px",
   },
+  buyBtn: {
+    backgroundColor: "#1564c0",
+    width: "47%",
+    padding: ".8rem 8rem",
+    fontSize: "16px",
+    fontWeight: "bold",
+    marginBottom: "20px",
+  },
   amount: {
     width: "47%",
     marginBottom: "20px",
@@ -57,6 +71,7 @@ const useStyles = makeStyles({
   searchButton: {
     width: "98%",
     height: "50px",
+    backgroundColor: "#1564c0",
   },
 
   text: {
@@ -94,6 +109,7 @@ export default function Banner() {
             <Button
               startIcon={<ShoppingCartOutlinedIcon />}
               className={classes.button}
+              className={classes.buyBtn}
               color={"primary"}
               variant={"contained"}
             >
