@@ -75,13 +75,22 @@ import React from "react";
 
 
 // import GridMobile from "./Assignment4/Grid/index";
-import FlexResponsive from "./Assignment4/Flex/index";
+// import FlexResponsive from "./Assignment4/Flex/index";
+
+// function App(){
+//   return(
+//     <div>
+//       <GridMobile />
+//       <FlexResponsive />
+//     </div>
+//   );
+// }
+import MaterialMonero from "./Assignment5/MoneroSite/index";
 
 function App(){
   return(
     <div>
-      {/* <GridMobile /> */}
-      <FlexResponsive />
+      <MaterialMonero />
     </div>
   );
 }
