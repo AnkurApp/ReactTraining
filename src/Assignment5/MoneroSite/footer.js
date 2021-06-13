@@ -91,7 +91,7 @@ export default function Footer() {
                   {"Terms of service"}
                 </Link>
               </ListItem>
-              <ListItem className={classes.link} Item>
+              <ListItem className={classes.link}>
                 <Link href="#" underline={"always"}>
                   {"Fees"}
                 </Link>

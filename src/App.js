@@ -73,7 +73,6 @@ import React from "react";
 //   }
 // }
 
-
 // import GridMobile from "./Assignment4/Grid/index";
 // import FlexResponsive from "./Assignment4/Flex/index";
 
@@ -85,13 +84,25 @@ import React from "react";
 //     </div>
 //   );
 // }
-import MaterialMonero from "./Assignment5/MoneroSite/index";
 
-function App(){
-  return(
-    <div>
-      <MaterialMonero />
-    </div>
+// import MaterialMonero from "./Assignment5/MoneroSite/index";
+
+// function App() {
+//   return (
+//     <>
+//       <MaterialMonero />
+//     </>
+//   );
+// }
+
+// Assignment 6
+import Assignment6 from "./Assignment6/Assignment/index";
+
+function App() {
+  return (
+    <>
+      <Assignment6 />
+    </>
   );
 }
 
