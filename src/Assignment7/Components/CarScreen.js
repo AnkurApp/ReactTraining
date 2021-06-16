@@ -44,7 +44,7 @@ export default function CarScreen(props) {
     }
     localStorage.setItem("CarsData", JSON.stringify(CarsData));
   };
-  // console.log(CarMiles)
+
 
   return (
     <div className={"editScreen"}>
