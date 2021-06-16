@@ -96,12 +96,24 @@ import React from "react";
 // }
 
 // Assignment 6
-import Assignment6 from "./Assignment6/Assignment/index";
+// import Assignment6 from "./Assignment6/Assignment/index";
+
+// function App() {
+//   return (
+//     <>
+//       <Assignment6 />
+//     </>
+//   );
+// }
+
+
+// Assignment 7
+import Assignment7 from "./Assignment7/Assigment/index";
 
 function App() {
   return (
     <>
-      <Assignment6 />
+      <Assignment7 />
     </>
   );
 }
