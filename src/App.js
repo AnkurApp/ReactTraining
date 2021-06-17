@@ -106,14 +106,24 @@ import React from "react";
 //   );
 // }
 
-
 // Assignment 7
-import Assignment7 from "./Assignment7/Assigment/index";
+// import Assignment7 from "./Assignment7/Assigment/index";
+
+// function App() {
+//   return (
+//     <>
+//       <Assignment7 />
+//     </>
+//   );
+// }
+
+// Assignment 8
+import Assignment8 from "./Assignment8/Assignment/index";
 
 function App() {
   return (
     <>
-      <Assignment7 />
+      <Assignment8 />
     </>
   );
 }

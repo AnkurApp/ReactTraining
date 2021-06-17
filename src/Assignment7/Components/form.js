@@ -17,6 +17,7 @@ export default function FormSection() {
 
   const BikesData = JSON.parse(localStorage.getItem("BikesData"));
   const CarsData = JSON.parse(localStorage.getItem("CarsData"));
+  console.log(BikesData);
 
   const checkPage = () => {
     setIsPage(false);
