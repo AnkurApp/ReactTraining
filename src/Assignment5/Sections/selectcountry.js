@@ -1,11 +1,8 @@
-/* eslint-disable no-use-before-define */
 import React from "react";
 import TextField from "@material-ui/core/TextField";
-import { Autocomplete } from '@material-ui/lab';
+import { Autocomplete } from "@material-ui/lab";
 import { makeStyles } from "@material-ui/core/styles";
 
-// ISO 3166-1 alpha-2
-// ⚠️ No support for IE 11
 function countryToFlag(isoCode) {
   return typeof String.fromCodePoint !== "undefined"
     ? isoCode
@@ -32,7 +29,7 @@ export default function CountrySelect() {
   return (
     <Autocomplete
       id="country-select-demo"
-      style={{ width: '47%', marginBottom: '20px' }}
+      style={{ width: "47%", marginBottom: "20px" }}
       options={countries}
       classes={{
         option: classes.option,

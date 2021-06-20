@@ -20,9 +20,9 @@ const usestyles = makeStyles({
   switch: {
     marginTop: "10px",
 
-    "& .MuiAppBar-colorPrimary":{
-      color: '#000 !important',
-    }
+    "& .MuiAppBar-colorPrimary": {
+      color: "#000 !important",
+    },
   },
 
   signUp: {
@@ -32,14 +32,22 @@ const usestyles = makeStyles({
     fontSize: "15px",
     padding: "8px 25px",
     fontWeight: "600",
+
+    "&:hover": {
+      backgroundColor: "#275d27",
+    },
   },
-  
+
   logIn: {
     backgroundColor: "#1564c0",
     color: "#ffffff",
     padding: "8px 25px",
     fontSize: "15px",
     fontWeight: "600",
+
+    "&:hover": {
+      backgroundColor: "#0e4684",
+    },
   },
 });
 

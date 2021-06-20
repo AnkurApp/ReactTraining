@@ -85,15 +85,17 @@ import React from "react";
 //   );
 // }
 
-// import MaterialMonero from "./Assignment5/MoneroSite/index";
+// Assignment 5
 
-// function App() {
-//   return (
-//     <>
-//       <MaterialMonero />
-//     </>
-//   );
-// }
+import MaterialMonero from "./Assignment5/MoneroSite/index";
+
+function App() {
+  return (
+    <>
+      <MaterialMonero />
+    </>
+  );
+}
 
 // Assignment 6
 // import Assignment6 from "./Assignment6/Assignment/index";
@@ -118,14 +120,14 @@ import React from "react";
 // }
 
 // Assignment 8
-import Assignment8 from "./Assignment8/Assignment/index";
+// import Assignment8 from "./Assignment8/Assignment/index";
 
-function App() {
-  return (
-    <>
-      <Assignment8 />
-    </>
-  );
-}
+// function App() {
+//   return (
+//     <>
+//       <Assignment8 />
+//     </>
+//   );
+// }
 
 export default App;
