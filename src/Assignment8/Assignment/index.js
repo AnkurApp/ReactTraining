@@ -41,10 +41,10 @@ export default function Assignment8() {
 
       <DataTable
         data={data}
-        ArrayIndex={ArrayIndex}
-        setFormType={setFormType}
-        setArrayIndex={setArrayIndex}
         setData={setData}
+        ArrayIndex={ArrayIndex}
+        setArrayIndex={setArrayIndex}
+        setFormType={setFormType}
         setModal={setModalOpen}
       />
     </div>

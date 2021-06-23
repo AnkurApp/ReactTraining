@@ -65,7 +65,7 @@ export default function DataTable(props) {
 
                     <td className={"tablebtnSection"}>
                       <button
-                        className={"tableBbtn"}
+                        className={"tableBtn"}
                         onClick={() => {
                           props.setModal(true);
                           props.setFormType("Edit");
@@ -90,7 +90,7 @@ export default function DataTable(props) {
               })
             ) : (
               <tr>
-                <td colSpan="5">{"No records found"}</td>
+                <td colSpan="6">{"No records found"}</td>
               </tr>
             )
           ) : (

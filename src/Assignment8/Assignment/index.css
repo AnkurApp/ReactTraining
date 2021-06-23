@@ -156,7 +156,7 @@ input::placeholder {
 
 .tableContainer th:last-child,
 .tableContainer td:last-child {
-  width: 15rem;
+  width: 20rem;
 }
 
 .tablebtnSection {
@@ -186,7 +186,7 @@ input::placeholder {
 
 .searchInput {
   width: 100%;
-  padding: 1rem 2rem;
+  padding: 0.8rem 2rem;
   margin-bottom: 3rem;
   border-radius: 10px;
   font-size: 18px;
