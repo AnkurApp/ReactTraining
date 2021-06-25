@@ -28,8 +28,8 @@ const useStyles = makeStyles({
   },
 
   btn: {
-    margin: "0 13rem",
-    padding: "0.5rem 2rem",
+    margin: "0 auto",
+    padding: "0.5rem 3rem",
     backgroundColor: "#86c306",
 
     "&:hover": {
@@ -47,7 +47,7 @@ const useStyles = makeStyles({
   },
 });
 
-export default function MobileCard(props) {
+export default function UserCard(props) {
   const classes = useStyles();
   return (
     <Card className={classes.mobileCard}>
@@ -59,14 +59,14 @@ export default function MobileCard(props) {
       />
 
       <CardContent align="center">
-        <Typography variant={"h6"}>{props.title}</Typography>
+        <Typography variant={"h6"}>{props.fname}</Typography>
       </CardContent>
 
       <CardActions align="center" className={classes.remove}>
         <Button className={classes.btn}>
           <Link
             to={{
-              pathname: `/mobileDescription/${props.index}`,
+              pathname: `/userDescription/${props.index}`,
               state: props.data,
             }}
             className={classes.btnLink}

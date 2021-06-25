@@ -1,4 +1,6 @@
 import React from "react";
+import { Provider } from "react-redux";
+import Store from "./Assignment12/store";
 
 // // import logo from './logo.svg';
 // import './App.css';
@@ -132,11 +134,50 @@ import React from "react";
 
 // Assignment 9
 
-import Assignment9 from "./Assignment9/Assignment/index";
+// import Assignment9 from "./Assignment9/Assignment/index";
+// function App() {
+//   return (
+//     <>
+//       <Assignment9 />
+//     </>
+//   );
+// }
+
+// Assignment 10
+
+// import Assignment10 from "./Assignment10/Assignment/index";
+// function App() {
+//   return (
+//     <>
+//       <Assignment10 />
+//     </>
+//   );
+// }
+
+// Assignment 11
+
+// import Counter from "./Assignment11/Counter/index";
+
+// function App() {
+//   return (
+//     <>
+//       <Provider store={Store}>
+//         <Counter />
+//       </Provider>
+//     </>
+//   );
+// }
+
+// Assignment 12
+
+import Assignment12 from "./Assignment12/Assignment/index";
+
 function App() {
   return (
     <>
-      <Assignment9 />
+      <Provider store={Store}>
+        <Assignment12 />
+      </Provider>
     </>
   );
 }

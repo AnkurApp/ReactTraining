@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
 
 import {
   makeStyles,
@@ -9,7 +9,6 @@ import {
   Typography,
 } from "@material-ui/core";
 
-import cardData from "../Modules/Data";
 import Navbar from "../Components/Navbar";
 
 const useStyles = makeStyles({
@@ -41,11 +40,15 @@ const useStyles = makeStyles({
   },
 });
 
-export default function Description() {
+export default function Description(props) {
   const classes = useStyles();
   const { Id } = useParams();
 
-  const selectedData = cardData.find((data) => data.id === Id);
+  const location = useLocation();
+
+  const Data = location.state;
+
+  const selectedData = Data.find((data) => data.id === Id);
   return (
     <>
       <Navbar />

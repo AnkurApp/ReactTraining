@@ -23,6 +23,7 @@ export default function Dashboard() {
               index={current.id}
               src={current.src}
               title={current.title}
+              data={cardData}
             />
           </Grid>
         ))}
