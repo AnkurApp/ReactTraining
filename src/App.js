@@ -1,6 +1,6 @@
 import React from "react";
 import { Provider } from "react-redux";
-import Store from "./Assignment12/store";
+import Store from "./store";
 
 // // import logo from './logo.svg';
 // import './App.css';
