@@ -1,6 +1,6 @@
 import { makeStyles, TextField, Typography, Button } from "@material-ui/core";
 import axios from "axios";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Modal from "react-modal";
 
 const useStyles = makeStyles({
@@ -57,18 +57,37 @@ const useStyles = makeStyles({
 export default function FormModal(props) {
   const classes = useStyles();
 
-  // const data = JSON.parse(localStorage.getItem("UserData"));
-  const [userId, setUserId] = useState();
+  const data = JSON.parse(localStorage.getItem("UserData"));
+  const [userId, setUserId] = useState(7);
   const [values, setValues] = useState({
     fname: "",
     lname: "",
     email: "",
   });
 
+  useEffect(() => {
+    if (props.formType === "EDIT") {
+      setValues({
+        fname: data[props.index].first_name,
+        lname: data[props.index].last_name,
+        email: data[props.index].email,
+      });
+    }
+  }, []);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setValues({ ...values, [name]: value });
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    createUser();
+    if (props.formType === "ADD") {
+      createUser();
+    } else {
+      editUser();
+    }
   };
 
   const createUser = async () => {
@@ -79,17 +98,39 @@ export default function FormModal(props) {
           first_name: values.fname,
           last_name: values.lname,
           email: values.email,
+          avatar: "https://reqres.in/img/faces/6-image.jpg",
         },
       });
 
       const { payLoad } = response.data;
       let Data = JSON.parse(localStorage.getItem("UserData"));
       Data.push(payLoad);
-      localStorage.setItem("Data", JSON.stringify(Data));
+      localStorage.setItem("UserData", JSON.stringify(Data));
       props.setUserData([...props.userData, payLoad]);
       props.setModalOpen();
       setValues({ fname: "", lname: "", email: "" });
       setUserId(userId + 1);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  const editUser = async () => {
+    try {
+      let Data = JSON.parse(localStorage.getItem("UserData"));
+      const response = await axios.put("https://reqres.in/api/users/", {
+        payLoad: {
+          ...Data[props.index],
+          first_name: values.fname,
+          last_name: values.lname,
+          email: values.email,
+        },
+      });
+
+      const { payLoad } = response.data;
+      Data.splice(props.index, 1, payLoad);
+      localStorage.setItem("UserData", JSON.stringify(Data));
+      props.setModalOpen(false);
     } catch (error) {
       console.log(error);
     }
@@ -113,27 +154,30 @@ export default function FormModal(props) {
           type="text"
           name="fname"
           label="First Name"
+          value={values.fname}
           className={classes.formInput}
-          placeholder={props.placeholderFname}
           required
+          onChange={handleChange}
         />
         <TextField
           variant="outlined"
           type="text"
           name="lname"
           label="Last Name"
+          value={values.lname}
           className={classes.formInput}
-          placeholder={props.placeholderLname}
           required
+          onChange={handleChange}
         />
         <TextField
           variant="outlined"
           type="email"
           name="email"
           label="Email"
+          value={values.email}
           className={classes.formInput}
-          placeholder={props.placeholderEmail}
           required
+          onChange={handleChange}
         />
 
         <Button

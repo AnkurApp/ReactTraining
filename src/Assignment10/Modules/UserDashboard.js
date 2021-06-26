@@ -38,7 +38,7 @@ export default function UserDashboard(props) {
   const classes = useStyles();
 
   const [modalOpen, setModalOpen] = useState(false);
-  console.log(modalOpen);
+  let Data = JSON.parse(localStorage.getItem("UserData"));
 
   return (
     <Box className={classes.userContainer}>
@@ -57,7 +57,7 @@ export default function UserDashboard(props) {
       </Button>
 
       <Grid className={classes.cardContainer} container spacing={8}>
-        {props.userData.map((current) => (
+        {Data?.map((current) => (
           <Grid key={current.id} item lg={4} xs={12}>
             <UserCard
               index={current.id}
@@ -73,9 +73,6 @@ export default function UserDashboard(props) {
         formType={"ADD"}
         modalOpen={modalOpen}
         setModalOpen={setModalOpen}
-        placeholderFname={"Enter Your First Name"}
-        placeholderLname={"Enter Your Last Name"}
-        placeholderEmail={"Enter Your Email"}
         btnName={"ADD"}
         userData={props.userData}
         setUserData={props.setUserData}

@@ -55,7 +55,7 @@ export default function UserCard(props) {
         className={classes.image}
         component="img"
         image={props.src}
-        alt="Mobile"
+        alt="User Image"
       />
 
       <CardContent align="center">

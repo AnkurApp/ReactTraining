@@ -16,7 +16,7 @@ export default function Assignment10() {
       console.log(apiData);
       localStorage.setItem("UserData", JSON.stringify(apiData.data.data));
       setUserData(apiData.data.data);
-      console.log(userData);
+      // console.log(userData);
     } catch (err) {
       console.log(err);
     }

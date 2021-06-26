@@ -43,35 +43,30 @@ export default function Assignment12() {
   useEffect(() => {
     dispatch(colorsApi());
   }, []);
+
   return (
-    <Box>
-      <Grid className={classes.cardContainer} container spacing={8}>
-        {color?.map((current, index) => (
-          <Grid key={index} item lg={4} xs={12}>
-            <Card className={classes.colorCard}>
-              <Box
-                className={classes.bgColor}
-                style={{ backgroundColor: current.color }}
-              />
-              <CardContent>
-                <Typography
-                  variant="h5"
-                  align="center"
-                  className={classes.text}
-                >
-                  {current.name}
-                </Typography>
-                <Typography variant="h5" align="center">
-                  {current.color}
-                </Typography>
-                <Typography variant="h5" align="center">
-                  {current.year}
-                </Typography>
-              </CardContent>
-            </Card>
-          </Grid>
-        ))}
-      </Grid>
-    </Box>
+    <Grid className={classes.cardContainer} container spacing={8}>
+      {color?.map((current, index) => (
+        <Grid key={index} item lg={4} xs={12}>
+          <Card className={classes.colorCard}>
+            <Box
+              className={classes.bgColor}
+              style={{ backgroundColor: current.color }}
+            />
+            <CardContent>
+              <Typography variant="h5" align="center" className={classes.text}>
+                {current.name}
+              </Typography>
+              <Typography variant="h5" align="center">
+                {current.color}
+              </Typography>
+              <Typography variant="h5" align="center">
+                {current.year}
+              </Typography>
+            </CardContent>
+          </Card>
+        </Grid>
+      ))}
+    </Grid>
   );
 }

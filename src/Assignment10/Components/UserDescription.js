@@ -13,7 +13,7 @@ import {
 
 import Navbar from "../Components/Navbar";
 import DeleteModal from "./DeleteModal";
-
+import FormModal from "./UserForm";
 
 const useStyles = makeStyles({
   descContainer: {
@@ -80,12 +80,13 @@ export default function UserDescription(props) {
   const classes = useStyles();
   const { Id } = useParams();
 
+  const [modalOpen, setModalOpen] = useState(false);
   const [deleteModalOpen, setDeleteModalOpen] = useState(false);
 
   const data = JSON.parse(localStorage.getItem("UserData"));
-  console.log(data);
 
   const selectedData = data[Id - 1];
+  console.log("ankur", selectedData);
   return (
     <>
       <Navbar />
@@ -114,6 +115,9 @@ export default function UserDescription(props) {
             variant="contained"
             className={classes.editBtn}
             color="default"
+            onClick={() => {
+              setModalOpen(true);
+            }}
           >
             {"Edit"}
           </Button>
@@ -135,8 +139,16 @@ export default function UserDescription(props) {
         setDeleteModalOpen={() => {
           setDeleteModalOpen(false);
         }}
-        index={Id}
+        index={Id - 1}
         data={data}
+      />
+
+      <FormModal
+        formType={"EDIT"}
+        modalOpen={modalOpen}
+        setModalOpen={setModalOpen}
+        btnName={"EDIT"}
+        index={Id - 1}
       />
     </>
   );
