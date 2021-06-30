@@ -145,14 +145,14 @@ import React from "react";
 
 // Assignment 10
 
-import Assignment10 from "./Assignment10/Assignment/index";
-function App() {
-  return (
-    <>
-      <Assignment10 />
-    </>
-  );
-}
+// import Assignment10 from "./Assignment10/Assignment/index";
+// function App() {
+//   return (
+//     <>
+//       <Assignment10 />
+//     </>
+//   );
+// }
 
 // Assignment 11
 
@@ -181,5 +181,15 @@ function App() {
 //     </>
 //   );
 // }
+
+// Assignment 13
+import Assignment13 from "./Assignment13/Assignment/index";
+function App() {
+  return (
+    <>
+      <Assignment13 />
+    </>
+  );
+}
 
 export default App;
