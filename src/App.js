@@ -193,22 +193,12 @@ import Store from "./store";
 // }
 
 // Assignment 14
-// import Assignment14 from "./Assignment14/Assignment/index";
-// function App() {
-//   return (
-//     <>
-//       <Assignment14 />
-//     </>
-//   );
-// }
-
-// Assignment 15
-import Assignment15 from "./Assignment15/Assignment/index";
+import Assignment14 from "./Assignment14/Assignment/index";
 function App() {
   return (
     <>
       <Provider store={Store}>
-        <Assignment15 />
+        <Assignment14 />
       </Provider>
     </>
   );
