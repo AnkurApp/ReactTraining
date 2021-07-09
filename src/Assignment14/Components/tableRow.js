@@ -2,7 +2,6 @@ import React from "react";
 import { TableRow, TableCell, TextField } from "@material-ui/core";
 
 export default function DataRow(props) {
-  // console.log(props.user);
   return (
     <>
       {props.user.map((current, index) => {

@@ -1,19 +1,13 @@
-import React, { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { UserApi } from "../Modules/action";
+import React from "react";
+
 import UserTable from "../Components/userTable";
 
 export default function Assignment14() {
-  const dispatch = useDispatch();
-  let { user } = useSelector((state) => state.userReducer);
 
-  useEffect(() => {
-    dispatch(UserApi());
-  }, []);
 
   return (
     <>
-      <UserTable user={user} />
+      <UserTable />
     </>
   );
 }

@@ -13,7 +13,11 @@ import {
   Button,
 } from "@material-ui/core";
 
+import { useDispatch, useSelector } from "react-redux";
+import { UserApi } from "../Modules/action";
+
 import DataRow from "./tableRow";
+import { UserUpdate } from "../Modules/action";
 
 const useStyles = makeStyles({
   tableContainer: {
@@ -58,8 +62,7 @@ const useStyles = makeStyles({
     textTransform: "uppercase",
   },
 });
-
-export default function UserTable(props) {
+function UserTable(props) {
   const classes = useStyles();
 
   // const tableHeader = [
@@ -76,12 +79,19 @@ export default function UserTable(props) {
   const [search, setSearch] = useState(false);
   const [searchedData, setSearchedData] = useState([]);
   const [order, setOrder] = useState("asc");
-  const [data, setData] = useState([]);
   const [disable, setDisable] = useState(true);
+  const [data, setData] = useState([]);
+
+  let { user } = useSelector((state) => state.userReducer);
+  const dispatch = useDispatch();
 
   useEffect(() => {
-    setData([...props.user]);
+    dispatch(UserApi());
   }, []);
+
+  useEffect(() => {
+    setData([...user]);
+  }, [user]);
 
   const handleSearch = (e) => {
     if (e.target.value === "") setSearch(false);
@@ -98,17 +108,22 @@ export default function UserTable(props) {
     }
   };
 
+  const oldData = JSON.parse(JSON.stringify(data));
+  // const oldData = [...data];
+
   const handleChange = (row, field, value) => {
     setDisable(false);
-    // const oldData = JSON.parse(JSON.stringify(data));
-    const oldData = [...data];
     console.log("old", oldData);
     oldData[row][field] = value;
     setData(oldData);
     console.log("new", data);
   };
 
-  const handleUpdate = () => {};
+  const handleUpdate = () => {
+    dispatch(UserUpdate(oldData));
+    console.log("newest", data);
+    setDisable(true);
+  };
 
   function compareBy(key) {
     return function (a, b) {
@@ -231,3 +246,5 @@ export default function UserTable(props) {
     </TableContainer>
   );
 }
+
+export default UserTable;

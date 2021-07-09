@@ -21,7 +21,7 @@ export const userReducer = (state = initialState, action) => {
     }
     case USER_UPDATE: {
       return {
-        user: [...action.payLoad],
+        user: action.payLoad,
         error: "",
       };
     }
