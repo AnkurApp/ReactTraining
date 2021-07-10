@@ -15,13 +15,14 @@ export default function DataRow(props) {
           latitude,
           longitude,
         } = current;
-        // console.log(number, name, city, state, country);
+
         return (
           <TableRow key={index}>
             <TableCell>
               <TextField
                 value={number}
                 variant="outlined"
+                error={props.errorState}
                 onChange={(e) =>
                   props.handleChange(index, "number", e.target.value)
                 }

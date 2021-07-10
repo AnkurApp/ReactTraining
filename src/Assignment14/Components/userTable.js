@@ -65,22 +65,12 @@ const useStyles = makeStyles({
 function UserTable(props) {
   const classes = useStyles();
 
-  // const tableHeader = [
-  //   "Street No",
-  //   "StreetName",
-  //   "City",
-  //   "State",
-  //   "Country",
-  //   "Postcode",
-  //   "Latitude",
-  //   "Longitude",
-  // ];
-
   const [search, setSearch] = useState(false);
   const [searchedData, setSearchedData] = useState([]);
   const [order, setOrder] = useState("asc");
   const [disable, setDisable] = useState(true);
   const [data, setData] = useState([]);
+  const [errorState, setErrorState] = useState(false);
 
   let { user } = useSelector((state) => state.userReducer);
   const dispatch = useDispatch();
@@ -113,15 +103,19 @@ function UserTable(props) {
 
   const handleChange = (row, field, value) => {
     setDisable(false);
-    console.log("old", oldData);
     oldData[row][field] = value;
     setData(oldData);
-    console.log("new", data);
+    if (oldData[row][field] === "") {
+      setErrorState(true);
+      setDisable(true);
+    }
+    else{
+      setErrorState(false);
+    }
   };
 
   const handleUpdate = () => {
     dispatch(UserUpdate(oldData));
-    console.log("newest", data);
     setDisable(true);
   };
 
@@ -239,7 +233,11 @@ function UserTable(props) {
               </TableRow>
             )
           ) : (
-            <DataRow user={data} handleChange={handleChange} />
+            <DataRow
+              user={data}
+              errorState={errorState}
+              handleChange={handleChange}
+            />
           )}
         </TableBody>
       </Table>
